@@ -1,4 +1,0 @@
-1. Donot put a terminator at the end of a macro declaration as it will lead to the generation of an error
-eg: #define pi 3.14; This is wrong statement and the use of the terminator should be avoided in this case.
-2. %p is the format specifier for the memory address 
-3. %04x is the format specifier for hexadecimal numbers
