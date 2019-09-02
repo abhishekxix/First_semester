@@ -1,3 +1,4 @@
+//This program uses the row number of a matrix as a class and the elements as the grades of individual students.
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
