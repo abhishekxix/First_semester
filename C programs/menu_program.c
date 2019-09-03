@@ -6,7 +6,7 @@ int main()
 {
 	int choice,n;
 	float root;
-	
+	system("clear");
 	do
 	{
 	  printf("\n\nThe following program is a menu driven program which performs the following::\n1 for even/odd check.\n2 for positive/negative check.\n3 for square of number.\n4 for square root of a number.\n5 to clear the screen.\n6 to quit the program.\n\nEnter your choice ::");
@@ -48,7 +48,7 @@ int main()
 			printf("Enter the number :: ");
 		  	scanf("%d",&n);
 		  	root = (float)sqrt(n);
-		  	printf("The square root of the entered number is %f .",root);
+		  	printf("The square root of the entered number is %.2f .",root);
 		  	break;
 		
 		case 5 : system("clear");
