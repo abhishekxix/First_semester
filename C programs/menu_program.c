@@ -6,7 +6,7 @@ int main()
 {
 	int choice,n;
 	float root;
-	system("clear");
+	system("clear"); //use system("cls") for windows.
 	do
 	{
 	  printf("\n\nThe following program is a menu driven program which performs the following::\n1 for even/odd check.\n2 for positive/negative check.\n3 for square of number.\n4 for square root of a number.\n5 to clear the screen.\n6 to quit the program.\n\nEnter your choice ::");
