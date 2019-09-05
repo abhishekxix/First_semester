@@ -1,4 +1,4 @@
-//WAP to evaluate e^x = 1 + (x^1)/1! +(x^2)/2! + .... + (x^n)/n! write in lab record
+//WAP to evaluate e^x = 1 + (x^1)/1! +(x^2)/2! + .... + (x^n)/n!
 #include <stdio.h>
 #include <math.h>
 
