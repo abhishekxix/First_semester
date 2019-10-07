@@ -6,7 +6,7 @@ int main()
 {
 	int start = 0;
 	char input[10];
-	cout<<"Hi! This is a car game based on a C program.\nType 'help' to show the options that can be entered.";
+	cout<<"Hi! This is a car game based on a C++ program.\nType 'help' to show the options that can be entered.";
 	while(1)
 	{  cout<<"\ninput>\t";
 	    cin>>input;
