@@ -14,6 +14,14 @@ void char_triangle();
 void char_triangle2();
 void num_triangle_inverted(int);
 void char_triangle_inverted();
+void triangle3(int);
+void pattern(int);
+void pyramid(int);
+void hollowbox(int);
+void left_triangle(int);
+void hexagon(int);
+void hollow_hex_box(int);
+
 int main()
 { 
     int n;
@@ -29,6 +37,13 @@ int main()
     char_triangle2();
     num_triangle_inverted(n);
     char_triangle_inverted();
+    triangle3(n);
+    pattern(n);
+    pyramid(n);
+    hollowbox(n);
+    left_triangle(n);
+    hexagon(n);
+    hollow_hex_box(n);
     return 0;
 }
 
@@ -159,3 +174,141 @@ void char_triangle_inverted()
     }
 }
 
+void triangle3(int n)
+{
+    cout<<endl;
+    for(int i = 1; i <= n; i++)
+    {
+        for(int j = 1; j <= n; j++)
+        {
+            if(j < i)
+            {
+                cout<<" ";
+            }
+            else cout<<"*";
+        }cout<<endl;
+    }
+}
+
+void pattern(int n)
+{
+    cout<<endl;
+    for(int i = 1, k = 0; i <= n; i++, k+=2)
+    {
+        for(int j = 0; j < (n + i) - 1 ; j++)
+        {
+           if(j<k)
+           {
+               cout<<"  ";
+           }
+           else cout<<"* ";
+            
+        }
+        cout<<endl;
+    }
+
+}
+
+void pyramid(int n)
+{
+    for(int i = 1; i <= n; i++)
+    {
+        for(int j = 1; j <=n; j++)
+        {
+            if(j <= n - i)
+            {
+                cout<<"  ";
+            }
+            else cout<<" *  ";
+        }cout<<endl;
+    }
+}
+
+void hollowbox(int n)
+{
+    cout<<endl;
+    for(int i = 1; i <=n; i++)
+    {
+        if(i == 1 || i == n)
+        {
+            for(int j = 1; j <= n; j++)
+            {
+                cout<<"* ";
+            }
+        }
+        else for(int j = 1;j <= n; j++)
+        {
+            if (j == 1 || j == n)
+            {
+                cout<<"* ";
+            }
+            else cout<<"  ";
+        }
+        cout<<endl;
+    }
+}
+
+void left_triangle(int n)
+{
+    cout<<endl;
+    for(int i = 1; i <= (n + 1) / 2; i++)
+    {
+        for(int j = 1; j <= (n + 1) / 2; j++)
+        {
+            if(j <= ((n + 1) / 2) - i)
+            {
+                cout<<" ";
+            }
+            else cout<<"*";
+        }cout<<endl;
+    }
+    for(int i = 1; i <= n -((n + 1) / 2); i++ )
+    {
+        for(int j = 1; j <= (n + 1) / 2; j++)
+        {
+            if(j <= i)
+            {
+                cout<<" ";
+            }
+            else cout<<"*";
+        }cout<<endl;
+    }
+}
+
+void hexagon(int n)
+{
+    cout<<endl;
+    for(int i = 1; i <= (n + 1) / 2; i++)
+    {
+        for(int j = 1; j <= (n + 1) / 2; j++)
+        {
+            if(j <= ((n + 1) / 2) - i)
+            {
+                cout<<" ";
+            }
+            else cout<<"* ";
+        }cout<<endl;
+    }
+    for(int i = 1; i <= n -((n + 1) / 2); i++ )
+    {
+        for(int j = 1; j <= (n + 1) / 2; j++)
+        {
+            if(j <= i)
+            {
+                cout<<" ";
+            }
+            else cout<<"* ";
+        }cout<<endl;
+    }
+}
+
+void hollow_hex_box(int n)
+{
+    for(int i = 1; i <= n/2; i++)
+    {
+        for(int j = 1; j <= n + 1; j++)
+        {
+            
+        }
+    }
+}
