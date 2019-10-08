@@ -2,7 +2,7 @@
 #include<stdio.h>
 
 int fact(int);
-int fac = 1;
+
 
 int main()
 {
@@ -15,8 +15,9 @@ int main()
 	printf("%d! = %d",n,f);
 }
 
-int fact(n)
+int fact(int n)
 {
+	static int fac = 1;
 	if(n > 0)
 	{
 		

@@ -13,7 +13,7 @@ int  main()
 		b = pow(a, 2);
 		a = (a * 10) + 1;
 		
-		printf("%d\n",b);
+		printf("%9d\n",b);
 		
 	}
 }
