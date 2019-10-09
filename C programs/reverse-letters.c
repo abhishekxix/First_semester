@@ -4,7 +4,7 @@
 int main()
 {
     char string[100], result[100] = "", temp[30], t;
-    int word_start, word_length, j, i = 0,l;
+    int word_start, word_length, j, i, l;
 
     printf("Enter a string to reverse its words :: \n");
     

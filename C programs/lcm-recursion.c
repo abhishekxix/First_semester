@@ -5,7 +5,6 @@ int lcm(int, int);
 int main()
 {
     int a, b, result;
-    int prime[100];
  
     printf("Enter two numbers::\n ");
     scanf("%d%d", &a, &b);
@@ -24,5 +23,4 @@ int lcm(int a, int b)
     }
     lc++;
     lcm(a, b);
-    return lc;
 }
