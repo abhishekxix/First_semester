@@ -10,8 +10,8 @@ int main()
     
     gets(string);
     
-
-    for(word_start = 0;word_start < strlen(string); word_start += word_length)
+    int n = strlen(string);
+    for(word_start = 0;word_start < n - 1; word_start += word_length)
     {
         for(word_length = word_start; string[word_length] != ' '; word_length++);
 
